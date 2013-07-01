@@ -1,0 +1,315 @@
+EESchema Schematic File Version 2  date Thu 06 Jun 2013 13:45:32 EST
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:localtransistors
+LIBS:motionsensor-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title "Motion-activated switch"
+Date "6 jun 2013"
+Rev "0.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	9300 3550 9350 3550
+Wire Wire Line
+	9650 3350 9650 2900
+Wire Wire Line
+	9650 2900 9300 2900
+Connection ~ 3150 3250
+Wire Wire Line
+	3250 3250 3100 3250
+Wire Wire Line
+	9000 4000 9000 3750
+Wire Wire Line
+	9000 3750 8850 3750
+Wire Wire Line
+	8900 3550 8850 3550
+Wire Wire Line
+	7950 3150 7950 3000
+Wire Wire Line
+	7950 3000 8100 3000
+Wire Wire Line
+	8100 3000 8100 3150
+Wire Wire Line
+	8100 3350 8100 3650
+Wire Wire Line
+	8100 3650 7800 3650
+Wire Wire Line
+	3150 3150 3150 3250
+Connection ~ 4900 3650
+Wire Wire Line
+	4750 3650 5100 3650
+Wire Wire Line
+	2500 3100 2500 3300
+Connection ~ 4900 4150
+Wire Wire Line
+	4900 4100 4900 4150
+Connection ~ 3800 3650
+Wire Wire Line
+	3950 3650 3800 3650
+Wire Wire Line
+	4350 4150 4350 3950
+Connection ~ 3800 4150
+Wire Wire Line
+	3800 3750 3800 3250
+Wire Wire Line
+	5100 4150 3400 4150
+Connection ~ 4350 4150
+Wire Wire Line
+	2250 3100 2250 3250
+Wire Wire Line
+	4900 3700 4900 3650
+Connection ~ 3400 4150
+Wire Wire Line
+	3100 3450 3400 3450
+Wire Wire Line
+	3400 3450 3400 4250
+Wire Wire Line
+	7800 3250 7800 2900
+Connection ~ 7800 3250
+Wire Wire Line
+	7800 2900 9100 2900
+Wire Wire Line
+	8350 3750 7800 3750
+Wire Wire Line
+	8350 3550 8200 3550
+Wire Wire Line
+	8200 3550 8200 3750
+Connection ~ 8200 3750
+Wire Wire Line
+	3650 3250 8100 3250
+Connection ~ 3800 3250
+Wire Wire Line
+	9650 3750 9650 4000
+$Comp
+L LOCAL_IRF540N Q1
+U 1 1 51AF5778
+P 9550 3550
+F 0 "Q1" H 9550 3402 40  0000 R CNN
+F 1 "LOCAL_IRF540N" H 9550 3699 40  0000 R CNN
+F 2 "TO220" H 9371 3651 29  0000 C CNN
+	1    9550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D1
+U 1 1 51AEEE2F
+P 3450 3250
+F 0 "D1" H 3450 3350 40  0000 C CNN
+F 1 "DIODE" H 3450 3150 40  0000 C CNN
+	1    3450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 51AEBFA8
+P 9000 4000
+F 0 "#PWR6" H 9000 4000 30  0001 C CNN
+F 1 "GND" H 9000 3930 30  0001 C CNN
+	1    9000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 51AEBF88
+P 8600 3750
+F 0 "R2" V 8680 3750 50  0000 C CNN
+F 1 "10K" V 8600 3750 50  0000 C CNN
+	1    8600 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 51AE8145
+P 7950 3150
+F 0 "#PWR5" H 7950 3150 30  0001 C CNN
+F 1 "GND" H 7950 3080 30  0001 C CNN
+	1    7950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 51AD811D
+P 9100 3550
+F 0 "D2" H 9100 3650 50  0000 C CNN
+F 1 "LED" H 9100 3450 50  0000 C CNN
+	1    9100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR3
+U 1 1 51A8325B
+P 3150 3150
+F 0 "#PWR3" H 3150 3100 20  0001 C CNN
+F 1 "+12V" H 3150 3250 30  0000 C CNN
+	1    3150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 51A82EEC
+P 2500 3300
+F 0 "#PWR2" H 2500 3300 30  0001 C CNN
+F 1 "GND" H 2500 3230 30  0001 C CNN
+	1    2500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR1
+U 1 1 51A82EE5
+P 2250 3250
+F 0 "#PWR1" H 2250 3200 20  0001 C CNN
+F 1 "+12V" H 2250 3350 30  0000 C CNN
+	1    2250 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG2
+U 1 1 51A82E5D
+P 2500 3100
+F 0 "#FLG2" H 2500 3195 30  0001 C CNN
+F 1 "PWR_FLAG" H 2500 3280 30  0000 C CNN
+	1    2500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG1
+U 1 1 51A82E58
+P 2250 3100
+F 0 "#FLG1" H 2250 3195 30  0001 C CNN
+F 1 "PWR_FLAG" H 2250 3280 30  0000 C CNN
+	1    2250 3100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7800 4150
+NoConn ~ 7800 4050
+NoConn ~ 7800 3950
+NoConn ~ 7800 3850
+$Comp
+L CONN_2 P2
+U 1 1 51A829F8
+P 9200 2550
+F 0 "P2" V 9150 2550 40  0000 C CNN
+F 1 "CONN_2" V 9250 2550 40  0000 C CNN
+	1    9200 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR7
+U 1 1 51A829DB
+P 9650 4000
+F 0 "#PWR7" H 9650 4000 30  0001 C CNN
+F 1 "GND" H 9650 3930 30  0001 C CNN
+	1    9650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 51A82807
+P 8600 3550
+F 0 "R1" V 8680 3550 50  0000 C CNN
+F 1 "100" V 8600 3550 50  0000 C CNN
+	1    8600 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_2 P1
+U 1 1 51A82351
+P 2750 3350
+F 0 "P1" V 2700 3350 40  0000 C CNN
+F 1 "CONN_2" V 2800 3350 40  0000 C CNN
+	1    2750 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ATTINY85-P IC1
+U 1 1 51A81F04
+P 7600 3550
+F 0 "IC1" H 7700 3600 60  0000 C CNN
+F 1 "ATTINY85-P" H 9600 2800 60  0000 C CNN
+F 2 "DIP8" H 7700 2800 60  0001 C CNN
+	1    7600 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K1
+U 1 1 51A81E23
+P 8450 3250
+F 0 "K1" V 8400 3250 50  0000 C CNN
+F 1 "CONN_3" V 8500 3250 40  0000 C CNN
+	1    8450 3250
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 51A8185F
+P 3400 4250
+F 0 "#PWR4" H 3400 4250 30  0001 C CNN
+F 1 "GND" H 3400 4180 30  0001 C CNN
+	1    3400 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 51A81828
+P 4900 3900
+F 0 "C2" H 4950 4000 50  0000 L CNN
+F 1 "10uF" H 4950 3800 50  0000 L CNN
+	1    4900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 51A8181A
+P 3800 3950
+F 0 "C1" H 3850 4050 50  0000 L CNN
+F 1 "100uF" H 3850 3850 50  0000 L CNN
+	1    3800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7805 U1
+U 1 1 51A817A4
+P 4350 3700
+F 0 "U1" H 4500 3504 60  0000 C CNN
+F 1 "7805" H 4350 3900 60  0000 C CNN
+	1    4350 3700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
