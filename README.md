@@ -28,6 +28,18 @@ my part and wonkiness in the component library the MOSFET's footprint is
 messed up. I've corrected the schematic, but my PCB was hand-patched, and
 the Pcbnew board file in this repository is currently a bit wrong.
 
+### Part list
+
+* C1: 100uF electrolytic capacitor
+* C2: 10uF electrolytic capacitor
+* D1: IN4004 diode
+* D2: 3mm LED
+* IC1: ATtiny85
+* Q1: IRF540N N-channel MOSFET
+* R1: 100 1/4W resistor
+* R1: 10K 1/4W resistor
+* U1: LM7805 voltage regulator
+
 ## Software dependencies
 
 * This sketch uses the [DigiSpark TinyPinChange](https://github.com/digistump/DigisparkArduinoIntegration/tree/master/libraries/DigisparkTinyPinChange)
