@@ -21,8 +21,12 @@ The circuit directory contains a [KiCad](http://www.kicad-pcb.org/) project
 for the PCB I built for this project. It was intended to be etched using
 toner transfer, so lots of big tracks and large gaps.
 
-Note that this board used the wrong pinout for the MOSFET. The board I
-etched has been patched by hand, but I haven't yet updated the PCB layout.
+Note that the PCB layout currently has a couple of errors. My initial
+schematic had R1 and D2 in series with the gate of Q1, which meant it
+wasn't getting enough voltage to saturate, and due to some confusion on
+my part and wonkiness in the component library the MOSFET's footprint is
+messed up. I've corrected the schematic, but my PCB was hand-patched, and
+the Pcbnew board file in this repository is currently a bit wrong.
 
 ## Software dependencies
 

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 06 Jun 2013 13:45:32 EST
+EESchema Schematic File Version 2  date Tue 02 Jul 2013 03:48:01 EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:localtransistors
 LIBS:motionsensor-cache
 EELAYER 25  0
 EELAYER END
@@ -37,7 +36,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "Motion-activated switch"
-Date "6 jun 2013"
+Date "1 jul 2013"
 Rev "0.1"
 Comp ""
 Comment1 ""
@@ -46,7 +45,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	9300 3550 9350 3550
+	8200 3550 9350 3550
+Wire Wire Line
+	8200 3550 8200 3950
+Connection ~ 9650 3950
+Wire Wire Line
+	8850 3950 9650 3950
 Wire Wire Line
 	9650 3350 9650 2900
 Wire Wire Line
@@ -55,11 +59,7 @@ Connection ~ 3150 3250
 Wire Wire Line
 	3250 3250 3100 3250
 Wire Wire Line
-	9000 4000 9000 3750
-Wire Wire Line
-	9000 3750 8850 3750
-Wire Wire Line
-	8900 3550 8850 3550
+	8900 3750 8850 3750
 Wire Wire Line
 	7950 3150 7950 3000
 Wire Wire Line
@@ -106,17 +106,20 @@ Connection ~ 7800 3250
 Wire Wire Line
 	7800 2900 9100 2900
 Wire Wire Line
-	8350 3750 7800 3750
-Wire Wire Line
-	8350 3550 8200 3550
-Wire Wire Line
-	8200 3550 8200 3750
-Connection ~ 8200 3750
+	7800 3750 8350 3750
 Wire Wire Line
 	3650 3250 8100 3250
 Connection ~ 3800 3250
 Wire Wire Line
-	9650 3750 9650 4000
+	9650 3750 9650 4050
+Wire Wire Line
+	8200 3950 8350 3950
+Connection ~ 8200 3750
+Wire Wire Line
+	9300 3750 9350 3750
+Wire Wire Line
+	9350 3750 9350 3950
+Connection ~ 9350 3950
 $Comp
 L LOCAL_IRF540N Q1
 U 1 1 51AF5778
@@ -137,21 +140,12 @@ F 1 "DIODE" H 3450 3150 40  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR6
-U 1 1 51AEBFA8
-P 9000 4000
-F 0 "#PWR6" H 9000 4000 30  0001 C CNN
-F 1 "GND" H 9000 3930 30  0001 C CNN
-	1    9000 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R2
 U 1 1 51AEBF88
-P 8600 3750
-F 0 "R2" V 8680 3750 50  0000 C CNN
-F 1 "10K" V 8600 3750 50  0000 C CNN
-	1    8600 3750
+P 8600 3950
+F 0 "R2" V 8680 3950 50  0000 C CNN
+F 1 "10K" V 8600 3950 50  0000 C CNN
+	1    8600 3950
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -166,10 +160,10 @@ $EndComp
 $Comp
 L LED D2
 U 1 1 51AD811D
-P 9100 3550
-F 0 "D2" H 9100 3650 50  0000 C CNN
-F 1 "LED" H 9100 3450 50  0000 C CNN
-	1    9100 3550
+P 9100 3750
+F 0 "D2" H 9100 3850 50  0000 C CNN
+F 1 "LED" H 9100 3650 50  0000 C CNN
+	1    9100 3750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -233,19 +227,19 @@ $EndComp
 $Comp
 L GND #PWR7
 U 1 1 51A829DB
-P 9650 4000
-F 0 "#PWR7" H 9650 4000 30  0001 C CNN
-F 1 "GND" H 9650 3930 30  0001 C CNN
-	1    9650 4000
+P 9650 4050
+F 0 "#PWR7" H 9650 4050 30  0001 C CNN
+F 1 "GND" H 9650 3980 30  0001 C CNN
+	1    9650 4050
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R1
 U 1 1 51A82807
-P 8600 3550
-F 0 "R1" V 8680 3550 50  0000 C CNN
-F 1 "100" V 8600 3550 50  0000 C CNN
-	1    8600 3550
+P 8600 3750
+F 0 "R1" V 8680 3750 50  0000 C CNN
+F 1 "100" V 8600 3750 50  0000 C CNN
+	1    8600 3750
 	0    -1   -1   0   
 $EndComp
 $Comp
