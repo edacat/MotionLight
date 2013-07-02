@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 02 Jul 2013 03:48:01 EST
+EESchema Schematic File Version 2  date Tue 02 Jul 2013 14:16:22 EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:localtransistors
 LIBS:motionsensor-cache
 EELAYER 25  0
 EELAYER END
@@ -37,7 +38,7 @@ encoding utf-8
 Sheet 1 1
 Title "Motion-activated switch"
 Date "1 jul 2013"
-Rev "0.1"
+Rev "0.2"
 Comp ""
 Comment1 ""
 Comment2 ""
