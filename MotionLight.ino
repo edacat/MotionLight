@@ -56,8 +56,8 @@ void inputInterrupt() {
 }
 
 void setup() {
-  // power_all_disable();
-  // power_timer0_enable();
+  power_all_disable();
+  power_timer0_enable();
 
   pinMode(inPin, INPUT);
   pinMode(outPin, OUTPUT);
