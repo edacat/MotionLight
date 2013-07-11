@@ -15,7 +15,7 @@ An Arduino sketch for ATtinys. Controls lighting using a PIR motion sensor.
 * N-channel MOSFET attached to pin 1. This then switches the lights on
   and off.
 
-## Circuit
+### Circuit
 
 The circuit directory contains a [KiCad](http://www.kicad-pcb.org/) project
 for the PCB I built for this project. It was intended to be etched using
@@ -26,7 +26,7 @@ etched my board. I had to update the schematic to fix a couple of bugs, and
 hand-patched my board. The schematic is correct, but the current PCB hasn't
 been tested. YMMV.
 
-### Part list
+#### Part list
 
 * C1: 100uF electrolytic capacitor
 * C2: 10uF electrolytic capacitor
