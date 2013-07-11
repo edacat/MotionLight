@@ -1,11 +1,6 @@
-update=Thu 06 Jun 2013 10:42:21 EST
+update=Thu 11 Jul 2013 14:54:21 EST
 version=1
-last_client=kicad
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+last_client=cvpcb
 [pcbnew]
 version=1
 PadDrlX=320
@@ -24,7 +19,6 @@ TxtLar=120
 MSegLar=150
 LastNetListRead=
 [pcbnew/libraries]
-LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -36,9 +30,10 @@ LibName8=led
 LibName9=dip_sockets
 LibName10=pga_sockets
 LibName11=valves
+LibName12=libraries/TO220_VERT_GDS
+LibDir=
 [eeschema]
 version=1
-LibDir=/home/phardy/kicad/locallibs
 NetFmt=1
 HPGLSpd=20
 HPGLDm=15
@@ -101,3 +96,8 @@ LibName30=valves
 LibName31=localtransistors
 [general]
 version=1
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
