@@ -1,6 +1,6 @@
-update=Thu 11 Jul 2013 14:54:21 EST
+update=Thu 11 Jul 2013 14:59:24 EST
 version=1
-last_client=cvpcb
+last_client=eeschema
 [pcbnew]
 version=1
 PadDrlX=320
@@ -32,8 +32,16 @@ LibName10=pga_sockets
 LibName11=valves
 LibName12=libraries/TO220_VERT_GDS
 LibDir=
+[general]
+version=1
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [eeschema]
 version=1
+LibDir=
 NetFmt=1
 HPGLSpd=20
 HPGLDm=15
@@ -93,11 +101,3 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=localtransistors
-[general]
-version=1
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms

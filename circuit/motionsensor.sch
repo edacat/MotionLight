@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 11 Jul 2013 14:09:32 EST
+EESchema Schematic File Version 2  date Thu 11 Jul 2013 14:59:28 EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:localtransistors
 LIBS:motionsensor-cache
 EELAYER 25  0
 EELAYER END
